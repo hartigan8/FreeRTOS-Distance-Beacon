@@ -1,0 +1,5 @@
+build/*
+.vscode/*
+sdkconfig
+sdkconfig.ci
+pytest_hello_world.py
