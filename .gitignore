@@ -3,3 +3,5 @@ build/*
 sdkconfig
 sdkconfig.ci
 pytest_hello_world.py
+*.sh
+sdkconfig.old
