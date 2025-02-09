@@ -6,6 +6,8 @@
 #include <ultrasonic.h>
 #include <esp_err.h>
 #include "esp_log.h"
+#include "mqtt_client.h"
+#include "esp_tls.h"
 
 #define MAX_DISTANCE_CM 200 // 5m max
 #define TRIGGER_GPIO 5
