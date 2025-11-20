@@ -60,7 +60,7 @@ void read_sensor(void *pvParameters)
             ESP_LOGI("read_sensor", "Measured distance: %.2f cm", distance);
 
             // Convert float to uint32_t and send via task notification
-            uint32_t distance_int = *(uint32_t *)&distance; 
+            uint32_t distance_int = (uint32_t) distance; 
             xTaskNotify(task2_handle, distance_int, eSetValueWithOverwrite);
         }
 
